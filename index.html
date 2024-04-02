@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Action Story</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <style>
+        body {
+            background-image: url('Background.jpg');
+            /* Replace 'background_image.jpg' with your background image file path */
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-attachment: scroll;
+        }
+
+        .character img {
+            display: block;
+            width: 200px;
+            /* Adjust the width as needed */
+            height: auto;
+            /* Maintain aspect ratio */
+            border-radius: 50%;
+            /* Make the images circular */
+            margin: 20px;
+            margin-left: 60px;
+        }
+
+        .character-name {
+            position: absolute;
+            bottom: -20px;
+            /* Center horizontally */
+            left: 18%;
+            transform: translateX(100%);
+            transform: translateY(25%);
+            margin-left: 8px;
+            margin-bottom: 100px;
+            background-color: rgba(255, 255, 255, 0.8);
+            /* Semi-transparent white background */
+            padding: 5px 10px;
+            border-radius: 5px;
+            font-size: 16px;
+            font-weight: bold;
+            visibility: hidden;
+            /* Hide the name initially */
+            opacity: 0;
+            /* Hide the name initially */
+            transition: visibility 0.3s, opacity 0.3s;
+            /* Smooth transition for visibility and opacity */
+        }
+
+        .character:hover .character-name {
+            visibility: visible;
+            /* Show the name on hover */
+            opacity: 1;
+            /* Show the name on hover */
+        }
+
+        .story-container {
+            background-color: rgba(255, 255, 255, 0.801);
+            /* Semi-transparent white background for readability */
+            padding: 20px;
+            margin: 20px auto;
+            max-width: 800px;
+            border-radius: 10px;
+            text-align: center;
+            /* Center-align the text */
+            color: #333;
+            /* Set text color */
+            text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
+            /* Add a subtle shadow around the text */
+            text-indent: 40px;
+        }
+
+        .navigation-link {
+            color: #333;
+            /* Set color of the arrow */
+            text-decoration: none;
+            /* Remove underline */
+        }
+
+        .navigation-link:hover {
+            color: #666;
+            /* Change color on hover */
+        }
+
+        #navigation-arrow {
+            position: fixed;
+            bottom: 20px;
+            /* Adjust distance from bottom */
+            left: 50%;
+            transform: translateX(-50%);
+        }
+
+        .paragraph {
+            text-align: left;
+            margin-bottom: 0px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="row">
+            <div class="col-md-4">
+                <div class="character" data-name="Sarah">
+                    <img src="First Women3.png" alt="Character 1" class="character-img">
+                    <span class="character-name">Sarah "Slick" Thompson</span>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="character" data-name="Jax">
+                    <img src="Man3.png" alt="Character 2" class="character-img">
+                    <span class="character-name">Jackson "Jax" Reynolds </span>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="character" data-name="Elena">
+                    <img src="Second Women3.png" alt="Character 3" class="character-img">
+                    <span class="character-name">Elena "Blaze" Rodriguez</span>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-12">
+                <div class="story-container">
+                    <h2 class="text-center" style="text-indent: 0px;">The untold story of Batman</h2><br>
+                    <p class="paragraph">The city sprawled beneath them like a patchwork quilt of lights, each flicker
+                        a testament to the lives lived within its embrace. Sarah "Slick" Thompson leaned against the
+                        rusted railing of the rooftop, her gaze fixed on the distant horizon as she awaited their
+                        mysterious client. The air was thick with anticipation, a tangible tension that hung heavy in
+                        the night.
+                    </p>
+
+                    <p class="paragraph">Beside her, Jackson "Jax" Reynolds stood tall and stoic, his sharp eyes
+                        scanning the
+                        surroundings with a vigilance born of years spent on the battlefield. He wore the mantle of his
+                        past with ease, a silent guardian ready to defend his comrades at a moment's notice. His
+                        presence was a comfort to Sarah, a reassuring reminder that no matter what dangers lay ahead,
+                        they would face them together.
+                    </p>
+
+                    <p class="paragraph">Across from them paced Elena "Blaze" Rodriguez, her restless energy palpable in
+                        the stillness of
+                        the night. With each step, she left a trail of chaos in her wake, her fiery spirit impossible to
+                        contain within the confines of the rooftop. She cracked her knuckles in anticipation, a
+                        mischievous grin playing across her lips as she awaited the start of their latest adventure.
+                    </p>
+
+                    <p class="paragraph">As they waited, Sarah's eyes fell upon an unexpected sight - a lone porta-potty
+                        tucked away in
+                        the corner of the rooftop, incongruous against the backdrop of urban decay. Its faded blue
+                        exterior bore the unmistakable emblem of a bat, a whimsical nod to a legendary figure known to
+                        patrol the streets below. With a bemused smile, Sarah motioned for her companions to follow as
+                        she approached the curious structure.
+                    </p>
+
+                    <p class="paragraph">"What in the world?" Elena exclaimed, her laughter echoing against the concrete
+                        walls as she
+                        peered inside.
+                    </p>
+
+                    <p class="paragraph">To their surprise, the interior of the porta-potty was adorned with all manner
+                        of bat-themed
+                        paraphernalia, from a cape and cowl hanging on a makeshift coat rack to a utility belt draped
+                        over the toilet tank. But the most amusing discovery of all was the roll of toilet paper
+                        emblazoned with the unmistakable symbol of a bat in flight, a tongue-in-cheek tribute to the
+                        caped crusader himself.
+                    </p>
+
+                    <p class="paragraph">"Looks like Batman has a sense of humor after all," Jax remarked, his lips
+                        quirking up in a rare
+                        smile as he reached for the roll.
+                    </p>
+
+                    <p class="paragraph">With a shrug, Sarah followed suit, tearing off a few sheets of the coveted
+                        toilet paper before
+                        tucking it into her pack. It was a small act of rebellion in the face of the night's
+                        uncertainties, a reminder that even in the darkest of times, there was always room for a moment
+                        of levity.
+                    </p>
+
+                    <p class="paragraph">The sound of footsteps echoed against the concrete, drawing their attention to
+                        the entrance of the rooftop. A shadowy figure emerged from the darkness, their features obscured
+                        by the veil of night. Sarah tensed instinctively, her hand drifting towards the concealed pistol
+                        at her waist as the figure approached.
+                    </p>
+
+                    <p class="paragraph">"About time you showed up," Sarah remarked, her voice a low growl of
+                        frustration.
+                    </p>
+
+                    <p class="paragraph">The figure paid her remark no heed, instead launching into the details of their
+                        mission with a sense of urgency that belied the gravity of the situation. A valuable artifact
+                        was being held in an abandoned warehouse on the outskirts of the city, heavily guarded by rival
+                        mercenaries and security forces. Their task was to infiltrate the warehouse, retrieve the
+                        artifact, and deliver it to their client unharmed.
+                    </p>
+
+                    <p class="paragraph">As the briefing concluded, Sarah exchanged a glance with Jax and Elena, a
+                        silent understanding passing between them. They were no strangers to danger, their lives
+                        intertwined by a shared history of adrenaline-fueled escapades and narrow escapes. Together,
+                        they formed the ultimate team, each member complementing the strengths and weaknesses of the
+                        others in perfect harmony.
+                    </p>
+
+                    <p class="paragraph">With a nod of agreement, they set off into the night, ready to embark on their
+                        latest mission. The city stretched out before them, a maze of towering skyscrapers and shadowed
+                        alleyways that held both promise and peril in equal measure. But as they disappeared into the
+                        darkness, they knew that whatever lay ahead, they would face it together, bound by the bonds of
+                        loyalty and adventure that had forged them into the ultimate team of mercenaries.
+                    </p>
+
+                    <p class="paragraph">And so, their journey began, a tale of danger and deception, of friendship and
+                        betrayal, unfolding against the backdrop of a city shrouded in darkness. But as they navigated
+                        the treacherous streets and shadowed alleyways, one thing remained certain - no matter what
+                        obstacles they faced, they would emerge victorious, their spirits unbroken and their resolve
+                        unwavering in the face of adversity.
+                    </p><br><br>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="container">
+        <!-- Your existing content here -->
+
+        <!-- Navigation arrow -->
+        <div class="row">
+            <div class="col-md-12 text-center" id="navigation-arrow">
+                <a href="Page2.html" class="navigation-link">
+                    <i class="fas fa-arrow-circle-down fa-3x"></i> <!-- Font Awesome arrow icon -->
+                </a>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+
+</html>
